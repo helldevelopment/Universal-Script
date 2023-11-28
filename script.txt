@@ -1,0 +1,683 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local AimbotTopBar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Information = Instance.new("TextLabel")
+local Created = Instance.new("TextLabel")
+local Discord = Instance.new("TextLabel")
+local Holder = Instance.new("Frame")
+local Aimbot = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+local AimbotWhiteBar = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local AimbotSlider = Instance.new("Frame")
+local ESPButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local AimSliderCircle = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local AimButton = Instance.new("TextButton")
+local UIGradient_2 = Instance.new("UIGradient")
+local AimbotOnOrOff = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local Teamcheck = Instance.new("Frame")
+local Text_2 = Instance.new("TextLabel")
+local Text_3 = Instance.new("TextLabel")
+local TeamCheckWhiteBar = Instance.new("Frame")
+local UIGradient_4 = Instance.new("UIGradient")
+local TeamcheckSlider = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local TeamSliderCircle = Instance.new("Frame")
+local ESPSliderCircle = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local TeamCheckButton = Instance.new("TextButton")
+local UIGradient_5 = Instance.new("UIGradient")
+local TeamcheckOnOrOff = Instance.new("TextLabel")
+local ESPOnOrOff = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
+local UIGradient_6 = Instance.new("UIGradient")
+local UIGradient_7 = Instance.new("UIGradient")
+local UIGradient_9 = Instance.new("UIGradient")
+local Sample = Instance.new("ImageLabel")
+local ESP = Instance.new("Frame")
+local ESPWhiteBar = Instance.new("Frame")
+local ESPSlider = Instance.new("Frame")
+
+
+--Properties:
+
+ScreenGui.Name = "UniversalGUI"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Enabled = true
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.15207006, 0, 0.459574461, 0)
+Main.Size = UDim2.new(0, 333, 0, 220)
+Main.Draggable = true
+Main.Active = true
+
+AimbotTopBar.Name = "AimbotTopBar"
+AimbotTopBar.Parent = Main
+AimbotTopBar.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+AimbotTopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimbotTopBar.BorderSizePixel = 0
+AimbotTopBar.Position = UDim2.new(-0.0010830533, 0, -0.167452589, 0)
+AimbotTopBar.Size = UDim2.new(0, 333, 0, 41)
+
+UICorner.Parent = AimbotTopBar
+
+Information.Name = "Information"
+Information.Parent = AimbotTopBar
+Information.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Information.BackgroundTransparency = 1.000
+Information.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Information.BorderSizePixel = 0
+Information.Position = UDim2.new(0.105105102, 0, 0.141199619, 0)
+Information.Size = UDim2.new(0, 260, 0, 29)
+Information.Font = Enum.Font.Gotham
+Information.Text = "🔥 Hell Scripts | Universal Script"
+Information.TextColor3 = Color3.fromRGB(255, 255, 255)
+Information.TextScaled = true
+Information.TextSize = 14.000
+Information.TextWrapped = true
+
+Created.Name = "Created"
+Created.Parent = Main
+Created.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Created.BackgroundTransparency = 1.000
+Created.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Created.BorderSizePixel = 0
+Created.Position = UDim2.new(0.084, 0, 0.782, 0)
+Created.Size = UDim2.new(0, 269, 0, 17)
+Created.Font = Enum.Font.Gotham
+Created.Text = "Script created by jaysterrz"
+Created.TextColor3 = Color3.fromRGB(255, 255, 255)
+Created.TextScaled = true
+Created.TextSize = 14.000
+Created.TextWrapped = true
+
+Discord.Name = "Discord"
+Discord.Parent = Main
+Discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Discord.BackgroundTransparency = 1.000
+Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Discord.BorderSizePixel = 0
+Discord.Position = UDim2.new(0.084, 0, 0.89, 0)
+Discord.Size = UDim2.new(0, 269, 0, 17)
+Discord.Font = Enum.Font.Gotham
+Discord.Text = "https://discord.gg/jqqGHZaspN"
+Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+Discord.TextScaled = true
+Discord.TextSize = 14.000
+Discord.TextWrapped = true
+
+Holder.Name = "Holder"
+Holder.Parent = Main
+Holder.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Holder.BackgroundTransparency = 0.350
+Holder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Holder.BorderSizePixel = 0
+Holder.Position = UDim2.new(0.0930930898, 0, 0.0540541224, 0)
+Holder.Size = UDim2.new(0, 263, 0, 156)
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Holder
+Aimbot.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Aimbot.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Aimbot.BorderSizePixel = 0
+Aimbot.Position = UDim2.new(0.0172026306, 0, 0.0216409229, 0)
+Aimbot.Size = UDim2.new(0.961720288, 0, 0.235642552, 0)
+
+Text.Name = "Text"
+Text.Parent = Aimbot
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+Text.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+Text.ZIndex = 2
+Text.Font = Enum.Font.Gotham
+Text.Text = "Aimbot"
+Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text.TextScaled = true
+Text.TextSize = 14.000
+Text.TextWrapped = true
+
+
+AimbotWhiteBar.Name = "AimbotWhiteBar"
+AimbotWhiteBar.Parent = Aimbot
+AimbotWhiteBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotWhiteBar.BorderSizePixel = 0
+AimbotWhiteBar.Position = UDim2.new(0.390470713, 0, 0.14243333, 0)
+AimbotWhiteBar.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ESP.Name = "ESP"
+ESP.Parent = Holder
+ESP.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ESP.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.013, 0,0.586, 0)
+ESP.Size = UDim2.new(0.962, 0,0.236, 0)
+
+Text_3.Name = "Text"
+Text_3.Parent = ESP
+Text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_3.BackgroundTransparency = 1.000
+Text_3.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+Text_3.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+Text_3.ZIndex = 2
+Text_3.Font = Enum.Font.Gotham
+Text_3.Text = "ESP (Distance and Hitbox)"
+Text_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_3.TextScaled = true
+Text_3.TextSize = 14.000
+Text_3.TextWrapped = true
+
+ESPWhiteBar.Name = "ESPWhiteBar"
+ESPWhiteBar.Parent = ESP
+ESPWhiteBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPWhiteBar.BorderSizePixel = 0
+ESPWhiteBar.Position = UDim2.new(0.390470713, 0, 0.14243333, 0)
+ESPWhiteBar.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+UIGradient_7.Rotation = 90
+UIGradient_7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient_7.Parent = ESPWhiteBar
+
+UIGradient.Rotation = 90
+UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient.Parent = AimbotWhiteBar
+
+ESPSlider.Name = "ESPSlider"
+ESPSlider.Parent = ESP
+ESPSlider.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ESPSlider.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ESPSlider.BorderSizePixel = 0
+ESPSlider.Position = UDim2.new(0.761591733, 0, 0.117235519, 0)
+ESPSlider.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+UICorner_8.CornerRadius = UDim.new(1, 0)
+UICorner_8.Parent = ESPSlider
+
+UICorner_9.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_9.Parent = ESP
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_9.Rotation = -90
+UIGradient_9.Parent = ESP
+
+Sample.Name = "Sample"
+Sample.Parent = Main
+Sample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sample.BackgroundTransparency = 1.000
+Sample.Image = "http://www.roblox.com/asset/?id=4560909609"
+Sample.ImageTransparency = 0.600
+
+AimbotSlider.Name = "AimbotSlider"
+AimbotSlider.Parent = Aimbot
+AimbotSlider.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AimbotSlider.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AimbotSlider.BorderSizePixel = 0
+AimbotSlider.Position = UDim2.new(0.761591733, 0, 0.117235519, 0)
+AimbotSlider.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+UICorner_2.CornerRadius = UDim.new(1, 0)
+UICorner_2.Parent = AimbotSlider
+
+ESPSliderCircle.Name = "ESPSliderCircle"
+ESPSliderCircle.Parent = ESPSlider
+ESPSliderCircle.AnchorPoint = Vector2.new(0.5, 0)
+ESPSliderCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPSliderCircle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ESPSliderCircle.BorderSizePixel = 0
+ESPSliderCircle.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ESPSliderCircle.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+UICorner_10.CornerRadius = UDim.new(1, 0)
+UICorner_10.Parent = ESPSliderCircle
+
+AimSliderCircle.Name = "AimSliderCircle"
+AimSliderCircle.Parent = AimbotSlider
+AimSliderCircle.AnchorPoint = Vector2.new(0.5, 0)
+AimSliderCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimSliderCircle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AimSliderCircle.BorderSizePixel = 0
+AimSliderCircle.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+AimSliderCircle.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+UICorner_3.CornerRadius = UDim.new(1, 0)
+UICorner_3.Parent = AimSliderCircle
+
+AimButton.Name = "AimButton"
+AimButton.Parent = AimbotSlider
+AimButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimButton.BackgroundTransparency = 1.000
+AimButton.Size = UDim2.new(1, 0, 1, 0)
+AimButton.ZIndex = 2
+AimButton.Font = Enum.Font.SourceSans
+AimButton.Text = " "
+AimButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AimButton.TextSize = 14.000
+
+ESPButton.Name = "ESPButton"
+ESPButton.Parent = ESPSlider
+ESPButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPButton.BackgroundTransparency = 1.000
+ESPButton.Size = UDim2.new(1, 0, 1, 0)
+ESPButton.ZIndex = 2
+ESPButton.Font = Enum.Font.SourceSans
+ESPButton.Text = " "
+ESPButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESPButton.TextSize = 14.000
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Rotation = -90
+UIGradient_2.Parent = AimbotSlider
+
+AimbotOnOrOff.Name = "AimbotOnOrOff"
+AimbotOnOrOff.Parent = Aimbot
+AimbotOnOrOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotOnOrOff.BackgroundTransparency = 1.000
+AimbotOnOrOff.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+AimbotOnOrOff.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+AimbotOnOrOff.ZIndex = 2
+AimbotOnOrOff.Font = Enum.Font.Gotham
+AimbotOnOrOff.Text = "Off"
+AimbotOnOrOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotOnOrOff.TextScaled = true
+AimbotOnOrOff.TextSize = 14.000
+AimbotOnOrOff.TextWrapped = true
+
+ESPOnOrOff.Name = "ESPOnOrOff"
+ESPOnOrOff.Parent = ESP
+ESPOnOrOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPOnOrOff.BackgroundTransparency = 1.000
+ESPOnOrOff.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+ESPOnOrOff.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+ESPOnOrOff.ZIndex = 2
+ESPOnOrOff.Font = Enum.Font.Gotham
+ESPOnOrOff.Text = "Off"
+ESPOnOrOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESPOnOrOff.TextScaled = true
+ESPOnOrOff.TextSize = 14.000
+ESPOnOrOff.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_4.Parent = Aimbot
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Rotation = -90
+UIGradient_3.Parent = Aimbot
+
+Teamcheck.Name = "Teamcheck"
+Teamcheck.Parent = Holder
+Teamcheck.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Teamcheck.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Teamcheck.BorderSizePixel = 0
+Teamcheck.Position = UDim2.new(0.0172026306, 0, 0.300000012, 0)
+Teamcheck.Size = UDim2.new(0.961720288, 0, 0.235642552, 0)
+
+Text_2.Name = "Text"
+Text_2.Parent = Teamcheck
+Text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.BackgroundTransparency = 1.000
+Text_2.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+Text_2.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+Text_2.ZIndex = 2
+Text_2.Font = Enum.Font.Gotham
+Text_2.Text = "Team Check"
+Text_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.TextScaled = true
+Text_2.TextSize = 14.000
+Text_2.TextWrapped = true
+
+TeamCheckWhiteBar.Name = "TeamCheckWhiteBar"
+TeamCheckWhiteBar.Parent = Teamcheck
+TeamCheckWhiteBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeamCheckWhiteBar.BorderSizePixel = 0
+TeamCheckWhiteBar.Position = UDim2.new(0.390470713, 0, 0.14243333, 0)
+TeamCheckWhiteBar.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+UIGradient_4.Rotation = 90
+UIGradient_4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient_4.Parent = TeamCheckWhiteBar
+
+TeamcheckSlider.Name = "TeamcheckSlider"
+TeamcheckSlider.Parent = Teamcheck
+TeamcheckSlider.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TeamcheckSlider.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TeamcheckSlider.BorderSizePixel = 0
+TeamcheckSlider.Position = UDim2.new(0.761591733, 0, 0.117235519, 0)
+TeamcheckSlider.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = TeamcheckSlider
+
+TeamSliderCircle.Name = "TeamSliderCircle"
+TeamSliderCircle.Parent = TeamcheckSlider
+TeamSliderCircle.AnchorPoint = Vector2.new(0.5, 0)
+TeamSliderCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeamSliderCircle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TeamSliderCircle.BorderSizePixel = 0
+TeamSliderCircle.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+TeamSliderCircle.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+UICorner_6.CornerRadius = UDim.new(1, 0)
+UICorner_6.Parent = TeamSliderCircle
+
+TeamCheckButton.Name = "TeamCheckButton"
+TeamCheckButton.Parent = TeamcheckSlider
+TeamCheckButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeamCheckButton.BackgroundTransparency = 1.000
+TeamCheckButton.Size = UDim2.new(1, 0, 1, 0)
+TeamCheckButton.ZIndex = 2
+TeamCheckButton.Font = Enum.Font.SourceSans
+TeamCheckButton.Text = " "
+TeamCheckButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeamCheckButton.TextSize = 14.000
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_5.Rotation = -90
+UIGradient_5.Parent = TeamcheckSlider
+
+TeamcheckOnOrOff.Name = "TeamcheckOnOrOff"
+TeamcheckOnOrOff.Parent = Teamcheck
+TeamcheckOnOrOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeamcheckOnOrOff.BackgroundTransparency = 1.000
+TeamcheckOnOrOff.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+TeamcheckOnOrOff.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+TeamcheckOnOrOff.ZIndex = 2
+TeamcheckOnOrOff.Font = Enum.Font.Gotham
+TeamcheckOnOrOff.Text = "Off"
+TeamcheckOnOrOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeamcheckOnOrOff.TextScaled = true
+TeamcheckOnOrOff.TextSize = 14.000
+TeamcheckOnOrOff.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_7.Parent = Teamcheck
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_6.Rotation = -90
+UIGradient_6.Parent = Teamcheck
+
+-- Scripts:
+
+local TeamCheck = false
+local ESPToggle = false
+
+AimButton.MouseButton1Click:Connect(function()
+	if _G.aimbot == false then
+		AimbotOnOrOff.Text = "On"
+		AimSliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+		AimSliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+		wait(0.05)
+		AimSliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+		AimSliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		_G.aimbot = true
+		function getClosest()
+			local closestdistance = math.huge
+			local target = nil
+
+			for i,v in pairs(game.Players:GetChildren()) do
+				if v ~= game.Players.LocalPlayer  then
+					if v.Character and v.Character:FindFirstChild("Head") and v.Character.Humanoid.Health > 0 and _G.aimbot then
+						if TeamCheck == true then
+							if game.Players.LocalPlayer.Team ~= v.Team then
+								local distance = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).magnitude
+								if distance < closestdistance then
+									closestdistance = distance
+									target = v
+								end
+							end
+						else
+							local distance = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).magnitude
+							if distance < closestdistance then
+								closestdistance = distance
+								target = v
+							end
+						end
+					end
+				end
+			end
+			return target
+		end
+	else
+		AimbotOnOrOff.Text = "Off"
+		AimSliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+		AimSliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+		wait(0.05)
+		AimSliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+		AimSliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+		_G.aimbot = false
+
+	end
+end)
+
+TeamCheckButton.MouseButton1Click:Connect(function()
+	if TeamCheck == false then
+		TeamcheckOnOrOff.Text = "On"
+		TeamSliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+		TeamSliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+		wait(0.05)
+		TeamSliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+		TeamSliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		TeamCheck = true
+	else
+		TeamcheckOnOrOff.Text = "Off"
+		TeamSliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+		TeamSliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+		wait(0.05)
+		TeamSliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+		TeamSliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+		
+		TeamCheck = false
+	end
+end)
+
+ESPButton.MouseButton1Click:Connect(function()
+	if ESPToggle == false then
+		ESPOnOrOff.Text = "On"
+		ESPSliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+		ESPSliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+		wait(0.05)
+		ESPSliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+		ESPSliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		ESPToggle = true
+	else
+		ESPOnOrOff.Text = "Off"
+		ESPSliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+		ESPSliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+		wait(0.05)
+		ESPSliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+		ESPSliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+
+		ESPToggle = false
+	end
+end)
+
+
+AimButton.MouseButton1Click:Connect(function()
+
+	local ms = game.Players.LocalPlayer:GetMouse()
+
+	local btn = AimButton
+	local sample = Sample
+
+	local c = sample:Clone()
+	c.Parent = btn
+	local x, y = (ms.X - c.AbsolutePosition.X), (ms.Y - c.AbsolutePosition.Y)
+	c.Position = UDim2.new(0, x, 0, y)
+	local len, size = 0.35, nil
+	if btn.AbsoluteSize.X >= btn.AbsoluteSize.Y then
+		size = (btn.AbsoluteSize.X * 1.5)
+	else
+		size = (btn.AbsoluteSize.Y * 1.5)
+	end
+	c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
+	for i = 1, 10 do
+		c.ImageTransparency = c.ImageTransparency + 0.05
+		wait(len / 12)
+	end
+	c:Destroy()
+
+	AimSliderCircle.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {BackgroundColor3 = Color3.fromRGB(40, 40, 40)}):Play()
+	end)
+
+	AimSliderCircle.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {BackgroundColor3 = Color3.fromRGB(30, 30, 30)}):Play()
+	end)
+end)
+
+TeamCheckButton.MouseButton1Click:Connect(function()
+	local ms = game.Players.LocalPlayer:GetMouse()
+
+	local btn = TeamCheckButton
+	local sample = Sample
+
+	local c = sample:Clone()
+	c.Parent = btn
+	local x, y = (ms.X - c.AbsolutePosition.X), (ms.Y - c.AbsolutePosition.Y)
+	c.Position = UDim2.new(0, x, 0, y)
+	local len, size = 0.35, nil
+	if btn.AbsoluteSize.X >= btn.AbsoluteSize.Y then
+		size = (btn.AbsoluteSize.X * 1.5)
+	else
+		size = (btn.AbsoluteSize.Y * 1.5)
+	end
+	c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
+	for i = 1, 10 do
+		c.ImageTransparency = c.ImageTransparency + 0.05
+		wait(len / 12)
+	end
+	c:Destroy()
+end)
+
+ESPButton.MouseButton1Click:Connect(function()
+	local ms = game.Players.LocalPlayer:GetMouse()
+
+	local btn = ESPButton
+	local sample = Sample
+
+	local c = sample:Clone()
+	c.Parent = btn
+	local x, y = (ms.X - c.AbsolutePosition.X), (ms.Y - c.AbsolutePosition.Y)
+	c.Position = UDim2.new(0, x, 0, y)
+	local len, size = 0.35, nil
+	if btn.AbsoluteSize.X >= btn.AbsoluteSize.Y then
+		size = (btn.AbsoluteSize.X * 1.5)
+	else
+		size = (btn.AbsoluteSize.Y * 1.5)
+	end
+	c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
+	for i = 1, 10 do
+		c.ImageTransparency = c.ImageTransparency + 0.05
+		wait(len / 12)
+	end
+	c:Destroy()
+end)
+
+
+local aiming = false
+
+local camera = game.Workspace.CurrentCamera
+local UIS = game:GetService("UserInputService")
+local Speedbypass = true
+local RS = game:GetService("RunService")
+UIS.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton2 then
+		_G.aim = true
+		while wait() do
+			if _G.aim == true then
+				camera.CFrame = CFrame.new(camera.CFrame.Position, getClosest().Character.Head.Position)
+			end
+		end
+	end
+end)
+UIS.InputEnded:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton2 then
+		_G.aim = false
+	end
+end)
+RS.RenderStepped:Connect(function()
+	if Speedbypass == true and game.Players.LocalPlayer.Character ~= nil and game.Players.LocalPlayer.Character.Humanoid and game.Players.LocalPlayer.Character.Humanoid.Parent then
+		if game.Players.LocalPlayer.Character.Humanoid.MoveDirection.Magnitude > 0 then
+			game.Players.LocalPlayer.Character:TranslateBy(game.Players.LocalPlayer.Character.Humanoid.MoveDirection)
+		end        
+	end
+	
+	for i, box in ipairs(workspace:GetDescendants()) do
+		if box:FindFirstChild("Humanoid")  then
+			if ESPToggle == true then
+				if not box:FindFirstChild("EspBox") then
+					if box ~= game.Players.LocalPlayer.Character then
+						local esp = Instance.new("BoxHandleAdornment",box)
+						local DistanceGui = Instance.new("BillboardGui")
+						local Distance = Instance.new("TextLabel")
+						DistanceGui.Name = "DistanceGUI"
+						DistanceGui.Parent = box.Head
+						DistanceGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+						DistanceGui.Active = true
+						DistanceGui.Adornee = box.Head
+						DistanceGui.AlwaysOnTop = true
+						DistanceGui.LightInfluence = 1.000
+						DistanceGui.Size = UDim2.new(0, 200, 0, 50)
+						DistanceGui.StudsOffsetWorldSpace = Vector3.new(0, 1.2000000476837158, 0)
+						Distance.Name = "DistanceText"
+						Distance.Parent = DistanceGui
+						Distance.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Distance.BackgroundTransparency = 1.000
+						Distance.BorderColor3 = Color3.fromRGB(0, 0, 0)
+						Distance.BorderSizePixel = 0
+						Distance.Size = UDim2.new(0, 200, 0, 50)
+						Distance.Font = Enum.Font.Unknown
+						Distance.Text = "0 Studs"
+						Distance.TextColor3 = Color3.fromRGB(255, 255, 255)
+						Distance.TextSize = 14.000
+						Distance.TextWrapped = true
+						esp.Adornee = box
+						esp.ZIndex = 0
+						esp.Size = Vector3.new(5, 6, 2)
+						esp.Transparency = 0.5 --Changes Transparency 
+						esp.Color3 = Color3.fromRGB(0,255,0) --Color change
+						esp.AlwaysOnTop = true
+						esp.Name = "EspBox"
+					end
+				else
+					local text = box:FindFirstChild("Head"):FindFirstChild("DistanceGUI"):FindFirstChild("DistanceText")
+					text.Text = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position-box.HumanoidRootPart.Position).Magnitude.." Studs"
+				end
+			else
+				if box:FindFirstChild("EspBox") then
+					local Bax = box:FindFirstChild("EspBox")
+					local Distance = box.Head:FindFirstChild("DistanceGUI")
+					
+					Distance:Destroy()
+					Bax:Destroy()
+				end
+			end
+		end
+	end
+end)
+
+
+local t = 1;
+
+local tick = tick
+local fromHSV = Color3.fromHSV
+local RunService = game:GetService("RunService")
+
+RunService:BindToRenderStep("Rainbow", 1000, function()
+	local hue = tick() % t / t
+	local color = fromHSV(hue, 1, 1)
+	Discord.TextColor3 = color
+end)
