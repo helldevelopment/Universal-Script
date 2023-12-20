@@ -1,17 +1,18 @@
-local ScreenGui = Instance.new("ScreenGui")
+
+
+local UniversalGUI = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local AimbotTopBar = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Information = Instance.new("TextLabel")
 local Created = Instance.new("TextLabel")
-local Discord = Instance.new("TextLabel")
 local Holder = Instance.new("Frame")
 local Aimbot = Instance.new("Frame")
 local Text = Instance.new("TextLabel")
+local Sample = Instance.new("ImageLabel")
 local AimbotWhiteBar = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
 local AimbotSlider = Instance.new("Frame")
-local ESPButton = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local AimSliderCircle = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
@@ -22,46 +23,83 @@ local UICorner_4 = Instance.new("UICorner")
 local UIGradient_3 = Instance.new("UIGradient")
 local Teamcheck = Instance.new("Frame")
 local Text_2 = Instance.new("TextLabel")
-local Text_3 = Instance.new("TextLabel")
 local TeamCheckWhiteBar = Instance.new("Frame")
 local UIGradient_4 = Instance.new("UIGradient")
 local TeamcheckSlider = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
 local TeamSliderCircle = Instance.new("Frame")
-local ESPSliderCircle = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
 local TeamCheckButton = Instance.new("TextButton")
 local UIGradient_5 = Instance.new("UIGradient")
 local TeamcheckOnOrOff = Instance.new("TextLabel")
-local ESPOnOrOff = Instance.new("TextLabel")
 local UICorner_7 = Instance.new("UICorner")
-local UICorner_8 = Instance.new("UICorner")
-local UICorner_9 = Instance.new("UICorner")
-local UICorner_10 = Instance.new("UICorner")
 local UIGradient_6 = Instance.new("UIGradient")
-local UIGradient_7 = Instance.new("UIGradient")
-local UIGradient_9 = Instance.new("UIGradient")
-local Sample = Instance.new("ImageLabel")
 local ESP = Instance.new("Frame")
+local Text_3 = Instance.new("TextLabel")
 local ESPWhiteBar = Instance.new("Frame")
+local UIGradient_7 = Instance.new("UIGradient")
 local ESPSlider = Instance.new("Frame")
-
+local UICorner_8 = Instance.new("UICorner")
+local ESPSliderCircle = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local ESPButton = Instance.new("TextButton")
+local UIGradient_8 = Instance.new("UIGradient")
+local ESPOnOrOff = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local UIGradient_9 = Instance.new("UIGradient")
+local Discord = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local LocalPlayerSlider = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local LocalPlayerButton = Instance.new("TextButton")
+local UIGradient_10 = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local AimbotSlider_2 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local AimButton_3 = Instance.new("TextButton")
+local UIGradient_11 = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local Holder2 = Instance.new("Frame")
+local Noclip = Instance.new("Frame")
+local Text_4 = Instance.new("TextLabel")
+local NoclipWhiteBar = Instance.new("Frame")
+local UIGradient_12 = Instance.new("UIGradient")
+local NoclipSlider = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local NoclipSliderCircle = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local NoclipButton = Instance.new("TextButton")
+local UIGradient_13 = Instance.new("UIGradient")
+local NoclipOnOrOff = Instance.new("TextLabel")
+local UICorner_15 = Instance.new("UICorner")
+local UIGradient_14 = Instance.new("UIGradient")
+local Speedbypass = Instance.new("Frame")
+local Text_5 = Instance.new("TextLabel")
+local SpeedBypassWhiteBar = Instance.new("Frame")
+local UIGradient_15 = Instance.new("UIGradient")
+local SpeedBypassSlider = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local SpeedBypassCircle = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local SpeedBypassButton = Instance.new("TextButton")
+local UIGradient_16 = Instance.new("UIGradient")
+local SpeedBypassOnOrOff = Instance.new("TextLabel")
+local UICorner_18 = Instance.new("UICorner")
+local UIGradient_17 = Instance.new("UIGradient")
 
 --Properties:
 
-ScreenGui.Name = "UniversalGUI"
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.Enabled = true
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
+UniversalGUI.Name = "UniversalGUI"
+UniversalGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UniversalGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
-Main.Parent = ScreenGui
+Main.Parent = UniversalGUI
 Main.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.15207006, 0, 0.459574461, 0)
-Main.Size = UDim2.new(0, 333, 0, 220)
+Main.Size = UDim2.new(0, 333, 0, 261)
 Main.Draggable = true
 Main.Active = true
 
@@ -70,7 +108,7 @@ AimbotTopBar.Parent = Main
 AimbotTopBar.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 AimbotTopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AimbotTopBar.BorderSizePixel = 0
-AimbotTopBar.Position = UDim2.new(-0.0010830533, 0, -0.167452589, 0)
+AimbotTopBar.Position = UDim2.new(-0.0010830533, 0, -0.106149957, 0)
 AimbotTopBar.Size = UDim2.new(0, 333, 0, 41)
 
 UICorner.Parent = AimbotTopBar
@@ -84,7 +122,7 @@ Information.BorderSizePixel = 0
 Information.Position = UDim2.new(0.105105102, 0, 0.141199619, 0)
 Information.Size = UDim2.new(0, 260, 0, 29)
 Information.Font = Enum.Font.Gotham
-Information.Text = "🔥 Hell Scripts | Universal Script"
+Information.Text = "🔥Hell Scripts | Universal Script"
 Information.TextColor3 = Color3.fromRGB(255, 255, 255)
 Information.TextScaled = true
 Information.TextSize = 14.000
@@ -96,7 +134,7 @@ Created.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Created.BackgroundTransparency = 1.000
 Created.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Created.BorderSizePixel = 0
-Created.Position = UDim2.new(0.084, 0, 0.782, 0)
+Created.Position = UDim2.new(0.0840840861, 0, 0.797325611, 0)
 Created.Size = UDim2.new(0, 269, 0, 17)
 Created.Font = Enum.Font.Gotham
 Created.Text = "Script created by jaysterrz"
@@ -105,29 +143,15 @@ Created.TextScaled = true
 Created.TextSize = 14.000
 Created.TextWrapped = true
 
-Discord.Name = "Discord"
-Discord.Parent = Main
-Discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Discord.BackgroundTransparency = 1.000
-Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Discord.BorderSizePixel = 0
-Discord.Position = UDim2.new(0.084, 0, 0.89, 0)
-Discord.Size = UDim2.new(0, 269, 0, 17)
-Discord.Font = Enum.Font.Gotham
-Discord.Text = "https://discord.gg/jqqGHZaspN"
-Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
-Discord.TextScaled = true
-Discord.TextSize = 14.000
-Discord.TextWrapped = true
-
 Holder.Name = "Holder"
 Holder.Parent = Main
 Holder.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
 Holder.BackgroundTransparency = 0.350
 Holder.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Holder.BorderSizePixel = 0
-Holder.Position = UDim2.new(0.0930930898, 0, 0.0540541224, 0)
-Holder.Size = UDim2.new(0, 263, 0, 156)
+Holder.Position = UDim2.new(0.0930930898, 0, 0.168996528, 0)
+Holder.Size = UDim2.new(0, 263, 0, 159)
+Holder.Visible = true
 
 Aimbot.Name = "Aimbot"
 Aimbot.Parent = Holder
@@ -151,7 +175,6 @@ Text.TextScaled = true
 Text.TextSize = 14.000
 Text.TextWrapped = true
 
-
 AimbotWhiteBar.Name = "AimbotWhiteBar"
 AimbotWhiteBar.Parent = Aimbot
 AimbotWhiteBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -159,67 +182,9 @@ AimbotWhiteBar.BorderSizePixel = 0
 AimbotWhiteBar.Position = UDim2.new(0.390470713, 0, 0.14243333, 0)
 AimbotWhiteBar.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
 
-ESP.Name = "ESP"
-ESP.Parent = Holder
-ESP.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-ESP.BorderColor3 = Color3.fromRGB(27, 42, 53)
-ESP.BorderSizePixel = 0
-ESP.Position = UDim2.new(0.013, 0,0.586, 0)
-ESP.Size = UDim2.new(0.962, 0,0.236, 0)
-
-Text_3.Name = "Text"
-Text_3.Parent = ESP
-Text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Text_3.BackgroundTransparency = 1.000
-Text_3.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
-Text_3.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
-Text_3.ZIndex = 2
-Text_3.Font = Enum.Font.Gotham
-Text_3.Text = "ESP (Distance and Hitbox)"
-Text_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Text_3.TextScaled = true
-Text_3.TextSize = 14.000
-Text_3.TextWrapped = true
-
-ESPWhiteBar.Name = "ESPWhiteBar"
-ESPWhiteBar.Parent = ESP
-ESPWhiteBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESPWhiteBar.BorderSizePixel = 0
-ESPWhiteBar.Position = UDim2.new(0.390470713, 0, 0.14243333, 0)
-ESPWhiteBar.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
-
-UIGradient_7.Rotation = 90
-UIGradient_7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
-UIGradient_7.Parent = ESPWhiteBar
-
 UIGradient.Rotation = 90
 UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
 UIGradient.Parent = AimbotWhiteBar
-
-ESPSlider.Name = "ESPSlider"
-ESPSlider.Parent = ESP
-ESPSlider.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-ESPSlider.BorderColor3 = Color3.fromRGB(27, 42, 53)
-ESPSlider.BorderSizePixel = 0
-ESPSlider.Position = UDim2.new(0.761591733, 0, 0.117235519, 0)
-ESPSlider.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
-
-UICorner_8.CornerRadius = UDim.new(1, 0)
-UICorner_8.Parent = ESPSlider
-
-UICorner_9.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_9.Parent = ESP
-
-UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_9.Rotation = -90
-UIGradient_9.Parent = ESP
-
-Sample.Name = "Sample"
-Sample.Parent = Main
-Sample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sample.BackgroundTransparency = 1.000
-Sample.Image = "http://www.roblox.com/asset/?id=4560909609"
-Sample.ImageTransparency = 0.600
 
 AimbotSlider.Name = "AimbotSlider"
 AimbotSlider.Parent = Aimbot
@@ -231,18 +196,6 @@ AimbotSlider.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
 
 UICorner_2.CornerRadius = UDim.new(1, 0)
 UICorner_2.Parent = AimbotSlider
-
-ESPSliderCircle.Name = "ESPSliderCircle"
-ESPSliderCircle.Parent = ESPSlider
-ESPSliderCircle.AnchorPoint = Vector2.new(0.5, 0)
-ESPSliderCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESPSliderCircle.BorderColor3 = Color3.fromRGB(27, 42, 53)
-ESPSliderCircle.BorderSizePixel = 0
-ESPSliderCircle.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
-ESPSliderCircle.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
-
-UICorner_10.CornerRadius = UDim.new(1, 0)
-UICorner_10.Parent = ESPSliderCircle
 
 AimSliderCircle.Name = "AimSliderCircle"
 AimSliderCircle.Parent = AimbotSlider
@@ -267,17 +220,6 @@ AimButton.Text = " "
 AimButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 AimButton.TextSize = 14.000
 
-ESPButton.Name = "ESPButton"
-ESPButton.Parent = ESPSlider
-ESPButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESPButton.BackgroundTransparency = 1.000
-ESPButton.Size = UDim2.new(1, 0, 1, 0)
-ESPButton.ZIndex = 2
-ESPButton.Font = Enum.Font.SourceSans
-ESPButton.Text = " "
-ESPButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ESPButton.TextSize = 14.000
-
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_2.Rotation = -90
 UIGradient_2.Parent = AimbotSlider
@@ -295,20 +237,6 @@ AimbotOnOrOff.TextColor3 = Color3.fromRGB(255, 255, 255)
 AimbotOnOrOff.TextScaled = true
 AimbotOnOrOff.TextSize = 14.000
 AimbotOnOrOff.TextWrapped = true
-
-ESPOnOrOff.Name = "ESPOnOrOff"
-ESPOnOrOff.Parent = ESP
-ESPOnOrOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESPOnOrOff.BackgroundTransparency = 1.000
-ESPOnOrOff.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
-ESPOnOrOff.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
-ESPOnOrOff.ZIndex = 2
-ESPOnOrOff.Font = Enum.Font.Gotham
-ESPOnOrOff.Text = "Off"
-ESPOnOrOff.TextColor3 = Color3.fromRGB(255, 255, 255)
-ESPOnOrOff.TextScaled = true
-ESPOnOrOff.TextSize = 14.000
-ESPOnOrOff.TextWrapped = true
 
 UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
 UICorner_4.Parent = Aimbot
@@ -409,10 +337,408 @@ UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fr
 UIGradient_6.Rotation = -90
 UIGradient_6.Parent = Teamcheck
 
--- Scripts:
+ESP.Name = "ESP"
+ESP.Parent = Holder
+ESP.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ESP.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.0134003498, 0, 0.585743427, 0)
+ESP.Size = UDim2.new(0.961720288, 0, 0.235642552, 0)
 
+Text_3.Name = "Text"
+Text_3.Parent = ESP
+Text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_3.BackgroundTransparency = 1.000
+Text_3.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+Text_3.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+Text_3.ZIndex = 2
+Text_3.Font = Enum.Font.Gotham
+Text_3.Text = "ESP (Health, Hitbox, Distance )"
+Text_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_3.TextScaled = true
+Text_3.TextSize = 14.000
+Text_3.TextWrapped = true
+
+ESPWhiteBar.Name = "ESPWhiteBar"
+ESPWhiteBar.Parent = ESP
+ESPWhiteBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPWhiteBar.BorderSizePixel = 0
+ESPWhiteBar.Position = UDim2.new(0.390470713, 0, 0.14243333, 0)
+ESPWhiteBar.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+UIGradient_7.Rotation = 90
+UIGradient_7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient_7.Parent = ESPWhiteBar
+
+ESPSlider.Name = "ESPSlider"
+ESPSlider.Parent = ESP
+ESPSlider.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ESPSlider.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ESPSlider.BorderSizePixel = 0
+ESPSlider.Position = UDim2.new(0.761591733, 0, 0.117235519, 0)
+ESPSlider.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+UICorner_8.CornerRadius = UDim.new(1, 0)
+UICorner_8.Parent = ESPSlider
+
+ESPSliderCircle.Name = "ESPSliderCircle"
+ESPSliderCircle.Parent = ESPSlider
+ESPSliderCircle.AnchorPoint = Vector2.new(0.5, 0)
+ESPSliderCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPSliderCircle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ESPSliderCircle.BorderSizePixel = 0
+ESPSliderCircle.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ESPSliderCircle.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+UICorner_9.CornerRadius = UDim.new(1, 0)
+UICorner_9.Parent = ESPSliderCircle
+
+ESPButton.Name = "ESPButton"
+ESPButton.Parent = ESPSlider
+ESPButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPButton.BackgroundTransparency = 1.000
+ESPButton.Size = UDim2.new(1, 0, 1, 0)
+ESPButton.ZIndex = 2
+ESPButton.Font = Enum.Font.SourceSans
+ESPButton.Text = " "
+ESPButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESPButton.TextSize = 14.000
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_8.Rotation = -90
+UIGradient_8.Parent = ESPSlider
+
+ESPOnOrOff.Name = "ESPOnOrOff"
+ESPOnOrOff.Parent = ESP
+ESPOnOrOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPOnOrOff.BackgroundTransparency = 1.000
+ESPOnOrOff.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+ESPOnOrOff.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+ESPOnOrOff.ZIndex = 2
+ESPOnOrOff.Font = Enum.Font.Gotham
+ESPOnOrOff.Text = "Off"
+ESPOnOrOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESPOnOrOff.TextScaled = true
+ESPOnOrOff.TextSize = 14.000
+ESPOnOrOff.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_10.Parent = ESP
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_9.Rotation = -90
+UIGradient_9.Parent = ESP
+
+Discord.Name = "Discord"
+Discord.Parent = Main
+Discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Discord.BackgroundTransparency = 1.000
+Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Discord.BorderSizePixel = 0
+Discord.Position = UDim2.new(0.0840840861, 0, 0.889557719, 0)
+Discord.Size = UDim2.new(0, 269, 0, 17)
+Discord.Font = Enum.Font.Gotham
+Discord.Text = "https://discord.gg/jqqGHZaspN"
+Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+Discord.TextScaled = true
+Discord.TextSize = 14.000
+Discord.TextWrapped = true
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0930930898, 0, 0.0271419361, 0)
+Frame.Size = UDim2.new(0, 266, 0, 30)
+
+LocalPlayerSlider.Name = "LocalPlayerSlider"
+LocalPlayerSlider.Parent = Frame
+LocalPlayerSlider.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+LocalPlayerSlider.BorderColor3 = Color3.fromRGB(27, 42, 53)
+LocalPlayerSlider.BorderSizePixel = 0
+LocalPlayerSlider.Position = UDim2.new(0.271261573, 0, 0.106450401, 0)
+LocalPlayerSlider.Size = UDim2.new(0.233563557, 0, 0.781788945, 0)
+
+UICorner_11.CornerRadius = UDim.new(1, 0)
+UICorner_11.Parent = LocalPlayerSlider
+
+
+Sample.Name = "Sample"
+Sample.Parent = Main
+Sample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sample.BackgroundTransparency = 1.000
+Sample.Image = "http://www.roblox.com/asset/?id=4560909609"
+Sample.ImageTransparency = 0.600
+
+LocalPlayerButton.Name = "LocalPlayerButton"
+LocalPlayerButton.Parent = LocalPlayerSlider
+LocalPlayerButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayerButton.BackgroundTransparency = 1.000
+LocalPlayerButton.Position = UDim2.new(0.271, 0,0.106, 0)
+LocalPlayerButton.Size = UDim2.new(0.853933275, 0, 1, 0)
+LocalPlayerButton.ZIndex = 2
+LocalPlayerButton.Font = Enum.Font.Gotham
+LocalPlayerButton.Text = " "
+LocalPlayerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayerButton.TextSize = 14.000
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_10.Rotation = -90
+UIGradient_10.Parent = LocalPlayerSlider
+
+TextLabel.Parent = LocalPlayerSlider
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0947167277, 0, 0.108000003, 0)
+TextLabel.Size = UDim2.new(0, 50, 0, 18)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "LocalPlayer"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+AimbotSlider_2.Name = "AimbotSlider"
+AimbotSlider_2.Parent = Frame
+AimbotSlider_2.BackgroundColor3 = Color3.fromRGB(171, 171, 171)
+AimbotSlider_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AimbotSlider_2.BorderSizePixel = 0
+AimbotSlider_2.Position = UDim2.new(0.0156225329, 0, 0.106450401, 0)
+AimbotSlider_2.Size = UDim2.new(0.233563557, 0, 0.781788945, 0)
+
+UICorner_12.CornerRadius = UDim.new(1, 0)
+UICorner_12.Parent = AimbotSlider_2
+
+AimButton_3.Name = "AimButton"
+AimButton_3.Parent = AimbotSlider_2
+AimButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimButton_3.BackgroundTransparency = 1.000
+AimButton_3.Position = UDim2.new(0.016, 0,0.106, 0)
+AimButton_3.Size = UDim2.new(0.853933275, 0, 1, 0)
+AimButton_3.ZIndex = 2
+AimButton_3.Font = Enum.Font.Gotham
+AimButton_3.Text = " "
+AimButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimButton_3.TextSize = 14.000
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_11.Rotation = -90
+UIGradient_11.Parent = AimbotSlider_2
+
+TextLabel_2.Parent = AimbotSlider_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0947167277, 0, 0.108000003, 0)
+TextLabel_2.Size = UDim2.new(0, 50, 0, 18)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Combat"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Holder2.Name = "Holder2"
+Holder2.Parent = Main
+Holder2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Holder2.BackgroundTransparency = 0.350
+Holder2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Holder2.BorderSizePixel = 0
+Holder2.Position = UDim2.new(0.0930930898, 0, 0.168996528, 0)
+Holder2.Size = UDim2.new(0, 263, 0, 159)
+Holder2.Visible = false
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Holder2
+Noclip.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Noclip.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.0172026306, 0, 0.0216409229, 0)
+Noclip.Size = UDim2.new(0.961720288, 0, 0.235642552, 0)
+
+Text_4.Name = "Text"
+Text_4.Parent = Noclip
+Text_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_4.BackgroundTransparency = 1.000
+Text_4.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+Text_4.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+Text_4.ZIndex = 2
+Text_4.Font = Enum.Font.Gotham
+Text_4.Text = "NoClip"
+Text_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_4.TextScaled = true
+Text_4.TextSize = 14.000
+Text_4.TextWrapped = true
+
+NoclipWhiteBar.Name = "NoclipWhiteBar"
+NoclipWhiteBar.Parent = Noclip
+NoclipWhiteBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoclipWhiteBar.BorderSizePixel = 0
+NoclipWhiteBar.Position = UDim2.new(0.390470713, 0, 0.14243333, 0)
+NoclipWhiteBar.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+UIGradient_12.Rotation = 90
+UIGradient_12.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient_12.Parent = NoclipWhiteBar
+
+NoclipSlider.Name = "NoclipSlider"
+NoclipSlider.Parent = Noclip
+NoclipSlider.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+NoclipSlider.BorderColor3 = Color3.fromRGB(27, 42, 53)
+NoclipSlider.BorderSizePixel = 0
+NoclipSlider.Position = UDim2.new(0.761591733, 0, 0.117235519, 0)
+NoclipSlider.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+UICorner_13.CornerRadius = UDim.new(1, 0)
+UICorner_13.Parent = NoclipSlider
+
+NoclipSliderCircle.Name = "NoclipSliderCircle"
+NoclipSliderCircle.Parent = NoclipSlider
+NoclipSliderCircle.AnchorPoint = Vector2.new(0.5, 0)
+NoclipSliderCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoclipSliderCircle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+NoclipSliderCircle.BorderSizePixel = 0
+NoclipSliderCircle.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+NoclipSliderCircle.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+UICorner_14.CornerRadius = UDim.new(1, 0)
+UICorner_14.Parent = NoclipSliderCircle
+
+NoclipButton.Name = "NoclipButton"
+NoclipButton.Parent = NoclipSlider
+NoclipButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoclipButton.BackgroundTransparency = 1.000
+NoclipButton.Size = UDim2.new(1, 0, 1, 0)
+NoclipButton.ZIndex = 2
+NoclipButton.Font = Enum.Font.SourceSans
+NoclipButton.Text = " "
+NoclipButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoclipButton.TextSize = 14.000
+
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_13.Rotation = -90
+UIGradient_13.Parent = NoclipSlider
+
+NoclipOnOrOff.Name = "NoclipOnOrOff"
+NoclipOnOrOff.Parent = Noclip
+NoclipOnOrOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoclipOnOrOff.BackgroundTransparency = 1.000
+NoclipOnOrOff.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+NoclipOnOrOff.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+NoclipOnOrOff.ZIndex = 2
+NoclipOnOrOff.Font = Enum.Font.Gotham
+NoclipOnOrOff.Text = "Off"
+NoclipOnOrOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoclipOnOrOff.TextScaled = true
+NoclipOnOrOff.TextSize = 14.000
+NoclipOnOrOff.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_15.Parent = Noclip
+
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_14.Rotation = -90
+UIGradient_14.Parent = Noclip
+
+Speedbypass.Name = "Speedbypass"
+Speedbypass.Parent = Holder2
+Speedbypass.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Speedbypass.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Speedbypass.BorderSizePixel = 0
+Speedbypass.Position = UDim2.new(0.0172026306, 0, 0.300000012, 0)
+Speedbypass.Size = UDim2.new(0.961720288, 0, 0.235642552, 0)
+
+Text_5.Name = "Text"
+Text_5.Parent = Speedbypass
+Text_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_5.BackgroundTransparency = 1.000
+Text_5.Position = UDim2.new(0.0355398506, 0, 0.238356799, 0)
+Text_5.Size = UDim2.new(0.346520901, 0, 0.515798748, 0)
+Text_5.ZIndex = 2
+Text_5.Font = Enum.Font.Gotham
+Text_5.Text = "Speed Bypass"
+Text_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_5.TextScaled = true
+Text_5.TextSize = 14.000
+Text_5.TextWrapped = true
+
+SpeedBypassWhiteBar.Name = "SpeedBypassWhiteBar"
+SpeedBypassWhiteBar.Parent = Speedbypass
+SpeedBypassWhiteBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBypassWhiteBar.BorderSizePixel = 0
+SpeedBypassWhiteBar.Position = UDim2.new(0.390470713, 0, 0.14243333, 0)
+SpeedBypassWhiteBar.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+UIGradient_15.Rotation = 90
+UIGradient_15.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.20, 0.00), NumberSequenceKeypoint.new(0.80, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient_15.Parent = SpeedBypassWhiteBar
+
+SpeedBypassSlider.Name = "SpeedBypassSlider"
+SpeedBypassSlider.Parent = Speedbypass
+SpeedBypassSlider.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+SpeedBypassSlider.BorderColor3 = Color3.fromRGB(27, 42, 53)
+SpeedBypassSlider.BorderSizePixel = 0
+SpeedBypassSlider.Position = UDim2.new(0.761591733, 0, 0.117235519, 0)
+SpeedBypassSlider.Size = UDim2.new(0.209398687, 0, 0.731003523, 0)
+
+UICorner_16.CornerRadius = UDim.new(1, 0)
+UICorner_16.Parent = SpeedBypassSlider
+
+SpeedBypassCircle.Name = "SpeedBypassCircle"
+SpeedBypassCircle.Parent = SpeedBypassSlider
+SpeedBypassCircle.AnchorPoint = Vector2.new(0.5, 0)
+SpeedBypassCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBypassCircle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+SpeedBypassCircle.BorderSizePixel = 0
+SpeedBypassCircle.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+SpeedBypassCircle.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+UICorner_17.CornerRadius = UDim.new(1, 0)
+UICorner_17.Parent = SpeedBypassCircle
+
+SpeedBypassButton.Name = "SpeedBypassButton"
+SpeedBypassButton.Parent = SpeedBypassSlider
+SpeedBypassButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBypassButton.BackgroundTransparency = 1.000
+SpeedBypassButton.Size = UDim2.new(1, 0, 1, 0)
+SpeedBypassButton.ZIndex = 2
+SpeedBypassButton.Font = Enum.Font.SourceSans
+SpeedBypassButton.Text = " "
+SpeedBypassButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedBypassButton.TextSize = 14.000
+
+UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_16.Rotation = -90
+UIGradient_16.Parent = SpeedBypassSlider
+
+SpeedBypassOnOrOff.Name = "SpeedBypassOnOrOff"
+SpeedBypassOnOrOff.Parent = Speedbypass
+SpeedBypassOnOrOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBypassOnOrOff.BackgroundTransparency = 1.000
+SpeedBypassOnOrOff.Position = UDim2.new(0.407741845, 0, 0.222495809, 0)
+SpeedBypassOnOrOff.Size = UDim2.new(0.207884818, 0, 0.515798748, 0)
+SpeedBypassOnOrOff.ZIndex = 2
+SpeedBypassOnOrOff.Font = Enum.Font.Gotham
+SpeedBypassOnOrOff.Text = "Off"
+SpeedBypassOnOrOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBypassOnOrOff.TextScaled = true
+SpeedBypassOnOrOff.TextSize = 14.000
+SpeedBypassOnOrOff.TextWrapped = true
+
+UICorner_18.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_18.Parent = Speedbypass
+
+UIGradient_17.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(207, 207, 207)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_17.Rotation = -90
+UIGradient_17.Parent = Speedbypass
+
+local CurrentTab = "Combat"
 local TeamCheck = false
 local ESPToggle = false
+local NoclipToggle2 = false
 
 AimButton.MouseButton1Click:Connect(function()
 	if _G.aimbot == false then
@@ -478,7 +804,7 @@ TeamCheckButton.MouseButton1Click:Connect(function()
 		wait(0.05)
 		TeamSliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
 		TeamSliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
-		
+
 		TeamCheck = false
 	end
 end)
@@ -562,6 +888,33 @@ TeamCheckButton.MouseButton1Click:Connect(function()
 	c:Destroy()
 end)
 
+AimButton_3.MouseButton1Click:Connect(function()
+	if CurrentTab ~= "Combat" then
+		local Part = AimbotSlider_2
+		local TS = game:GetService("TweenService")
+		local Info = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+		CurrentTab = "Combat"
+		Holder.Visible = true
+		Holder2.Visible = false
+		TS:Create(Part, Info, {BackgroundColor3 = Color3.fromRGB(171, 171, 171)}):Play()
+		
+		TS:Create(LocalPlayerSlider, Info, {BackgroundColor3 = Color3.fromRGB(40, 40, 40)}):Play()
+	end
+end)
+
+LocalPlayerButton.MouseButton1Click:Connect(function()
+	if CurrentTab ~= "LocalPlayer" then
+		local Part = LocalPlayerSlider
+		local TS = game:GetService("TweenService")
+		local Info = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+		Holder.Visible = false
+		Holder2.Visible = true
+		TS:Create(Part, Info, {BackgroundColor3 = Color3.fromRGB(171, 171, 171)}):Play()
+		CurrentTab = "LocalPlayer"
+		TS:Create(AimbotSlider_2, Info, {BackgroundColor3 = Color3.fromRGB(40, 40, 40)}):Play()
+	end
+end)
+
 ESPButton.MouseButton1Click:Connect(function()
 	local ms = game.Players.LocalPlayer:GetMouse()
 
@@ -587,11 +940,103 @@ ESPButton.MouseButton1Click:Connect(function()
 end)
 
 
+NoclipButton.MouseButton1Click:Connect(function()
+	local ms = game.Players.LocalPlayer:GetMouse()
+
+	local btn = NoclipButton
+	local sample = Sample
+
+	local c = sample:Clone()
+	c.Parent = btn
+	local x, y = (ms.X - c.AbsolutePosition.X), (ms.Y - c.AbsolutePosition.Y)
+	c.Position = UDim2.new(0, x, 0, y)
+	local len, size = 0.35, nil
+	if btn.AbsoluteSize.X >= btn.AbsoluteSize.Y then
+		size = (btn.AbsoluteSize.X * 1.5)
+	else
+		size = (btn.AbsoluteSize.Y * 1.5)
+	end
+	c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
+	for i = 1, 10 do
+		c.ImageTransparency = c.ImageTransparency + 0.05
+		wait(len / 12)
+	end
+	c:Destroy()
+end)
+
+
+NoclipButton.MouseButton1Click:Connect(function()
+	if NoclipToggle2 == false then
+		NoclipOnOrOff.Text = "On"
+		NoclipSliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+		NoclipSliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+		wait(0.05)
+		NoclipSliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+		NoclipSliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		NoclipToggle2 = true
+	else
+		NoclipOnOrOff.Text = "Off"
+		NoclipSliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+		NoclipSliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+		wait(0.05)
+		NoclipSliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+		NoclipSliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+
+		NoclipToggle2 = false
+	end
+end)
+
+NoclipButton.MouseButton1Click:Connect(function()
+	local ms = game.Players.LocalPlayer:GetMouse()
+
+	local btn = NoclipButton
+	local sample = Sample
+
+	local c = sample:Clone()
+	c.Parent = btn
+	local x, y = (ms.X - c.AbsolutePosition.X), (ms.Y - c.AbsolutePosition.Y)
+	c.Position = UDim2.new(0, x, 0, y)
+	local len, size = 0.35, nil
+	if btn.AbsoluteSize.X >= btn.AbsoluteSize.Y then
+		size = (btn.AbsoluteSize.X * 1.5)
+	else
+		size = (btn.AbsoluteSize.Y * 1.5)
+	end
+	c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
+	for i = 1, 10 do
+		c.ImageTransparency = c.ImageTransparency + 0.05
+		wait(len / 12)
+	end
+	c:Destroy()
+end)
+local Speedbypas2s = false
+
+SpeedBypassButton.MouseButton1Click:Connect(function()
+	if Speedbypas2s == false then
+		SpeedBypassOnOrOff.Text = "On"
+		SpeedBypassCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+		SpeedBypassCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+		wait(0.05)
+		SpeedBypassCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+		SpeedBypassCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		Speedbypas2s = true
+	else
+		SpeedBypassOnOrOff.Text = "Off"
+		SpeedBypassCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+		SpeedBypassCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+		wait(0.05)
+		SpeedBypassCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+		SpeedBypassCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+
+		Speedbypas2s = false
+	end
+end)
+
 local aiming = false
 
 local camera = game.Workspace.CurrentCamera
 local UIS = game:GetService("UserInputService")
-local Speedbypass = true
+
 local RS = game:GetService("RunService")
 UIS.InputBegan:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton2 then
@@ -609,12 +1054,12 @@ UIS.InputEnded:Connect(function(input)
 	end
 end)
 RS.RenderStepped:Connect(function()
-	if Speedbypass == true and game.Players.LocalPlayer.Character ~= nil and game.Players.LocalPlayer.Character.Humanoid and game.Players.LocalPlayer.Character.Humanoid.Parent then
+	if Speedbypas2s == true and game.Players.LocalPlayer.Character ~= nil and game.Players.LocalPlayer.Character.Humanoid and game.Players.LocalPlayer.Character.Humanoid.Parent then
 		if game.Players.LocalPlayer.Character.Humanoid.MoveDirection.Magnitude > 0 then
 			game.Players.LocalPlayer.Character:TranslateBy(game.Players.LocalPlayer.Character.Humanoid.MoveDirection)
 		end        
 	end
-	
+
 	for i, box in ipairs(workspace:GetDescendants()) do
 		if box:FindFirstChild("Humanoid")  then
 			if ESPToggle == true then
@@ -660,7 +1105,7 @@ RS.RenderStepped:Connect(function()
 				if box:FindFirstChild("EspBox") then
 					local Bax = box:FindFirstChild("EspBox")
 					local Distance = box.Head:FindFirstChild("DistanceGUI")
-					
+
 					Distance:Destroy()
 					Bax:Destroy()
 				end
@@ -669,6 +1114,31 @@ RS.RenderStepped:Connect(function()
 	end
 end)
 
+
+Steppeds = game:GetService("RunService").Stepped:Connect(function()
+	if NoclipToggle2 == true then
+		for a, b in pairs(game.Workspace:GetChildren()) do
+			if b.Name == game.Players.LocalPlayer.Name then
+				for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+					if v:IsA("BasePart") then
+						v.CanCollide = false
+					end
+				end 
+			end	
+		end
+	elseif NoclipToggle2 == false then
+		local char = game.Players.LocalPlayer.Character
+		
+		if char.Humanoid.RigType == "R6" then
+			char["Torso"].CanCollide = true
+			char["Head"].CanCollide = true
+		else
+			char["UpperTorso"].CanCollide = true
+			char["LowerTorso"].CanCollide = true
+			char["HumanoidRootPart"].CanCollide = true
+		end
+	end
+end)
 
 local t = 1;
 
